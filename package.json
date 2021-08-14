@@ -1,0 +1,19 @@
+{
+  "name": "crud_app",
+  "version": "1.0.0",
+  "description": "This is app about CRUD using MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/septianwijaya45/crud_appNodeJs.git"
+  },
+  "author": "Septian Wijaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/septianwijaya45/crud_appNodeJs/issues"
+  },
+  "homepage": "https://github.com/septianwijaya45/crud_appNodeJs#readme"
+}
