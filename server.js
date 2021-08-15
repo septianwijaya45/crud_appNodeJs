@@ -4,6 +4,9 @@ const morgan        = require('morgan');
 const bodyParser    = require('body-parser');
 const path          = require('path');
 
+// database mongoDB
+const connectDB = require('./server/database/connection');
+
 const app = express();
 
 // ***** DOTENV setting ***** //
@@ -12,6 +15,9 @@ const PORT = process.env.PORT || 8080;
 
 // ***** log request status ***** //
 app.use(morgan('tiny'));
+
+// ***** MongoDB connection ***** //
+connectDB()
 
 // ***** Body Parser Configuration ***** //
 app.use(bodyParser.urlencoded({ extended: true }));
