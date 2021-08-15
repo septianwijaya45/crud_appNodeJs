@@ -27,9 +27,8 @@ app.use('/js', express.static(path.resolve(__dirname, 'assets/js')));
 
 
 // ***** Routes ***** //
-app.get('/', (req, res) => {
-    res.render('index');
-});
+const userRoutes = require('./server/routes/router');
+app.use('/', userRoutes);
 
 // ***** LISTEN APP ***** //
 app.listen(PORT, () => {
