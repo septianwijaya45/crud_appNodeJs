@@ -28,7 +28,7 @@ app.use('/js', express.static(path.resolve(__dirname, 'assets/js')));
 
 // ***** Routes ***** //
 app.get('/', (req, res) => {
-    res.send('CRUD application');
+    res.render('index');
 });
 
 // ***** LISTEN APP ***** //
